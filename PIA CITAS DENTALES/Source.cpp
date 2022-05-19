@@ -77,7 +77,7 @@ int main() {
 		system("pause");
 		system("cls");
 	}
-	int menu = 0; //declaramos la variable como tipo entero para que su valor pueda ser numÈrico
+	int menu = 0; //declaramos la variable como tipo entero para que su valor pueda ser num√©rico
 
 	float Plimpieza = 100, PDiagnostico = 0, PBrackets = 1500, PAjuste = 390, PImplante = 20000;
 
@@ -90,7 +90,7 @@ int main() {
 	{
 		system("cls");
 		cout << "______________________________" << endl;
-		cout << "Bienvenido al Menu de opciones" << endl; //esto es para imprimir el men˙ y dar la lista de opciones al usuario
+		cout << "Bienvenido al Menu de opciones" << endl; //esto es para imprimir el men√∫ y dar la lista de opciones al usuario
 		cout << "______________________________" << endl;
 		cout << "1. Agendar Cita" << endl;
 		cout << "2. Modificar Cita" << endl;
@@ -101,17 +101,17 @@ int main() {
 		cout << "______________________________" << endl;
 		cout << "Que numero de opcion desea elegir?" << endl;
 
-		cin >> menu; //se pide el valor de men˙ para poder evaluarlo en el switch
+		cin >> menu; //se pide el valor de men√∫ para poder evaluarlo en el switch
 
-		switch (menu) //se va a evaluar men˙ y de acuerdo al dato introducido es lo que se realizar·
+		switch (menu) //se va a evaluar men√∫ y de acuerdo al dato introducido es lo que se realizar√°
 		{
-		case 1:  //si el valor de men˙ es 1, se realizar· lo siguiente
+		case 1:  //si el valor de men√∫ es 1, se realizar√° lo siguiente
 		{
 
 			system("cls"); //Limpiar pantalla
 			cita* nueva_cita = new cita;
 
-			cout << "------------" << endl; //esto es estÈtico:)
+			cout << "------------" << endl; //esto es est√©tico:)
 			cout << "Agendar Cita" << endl;
 			cout << "------------" << endl;
 			cout << "Nombre del paciente: ";
@@ -132,10 +132,10 @@ int main() {
 			if (Numtratamiento >= 6) {
 				delete nueva_cita;
 			}
-			// como se seleccionÛ la opiÛn de agendar cita, es importante que los punteros conozcan cu·l es su cita anterior y su siguiente
+			// como se seleccion√≥ la opi√≥n de agendar cita, es importante que los punteros conozcan cu√°l es su cita anterior y su siguiente
 
 
-			switch (Numtratamiento) //switch para evaluar quÈ tratamiento eligiÛ y dar una descripciÛn y precio sobre este
+			switch (Numtratamiento) //switch para evaluar qu√© tratamiento eligi√≥ y dar una descripci√≥n y precio sobre este
 			{
 			case 1:
 			{
@@ -154,8 +154,8 @@ int main() {
 			}
 			case 2:
 			{
-				cout << "\n Descripcion: Es el procedimiento que consiste en aceptar a un paciente, reconocer que tiene un problema y descubrir la causa de este, e idear un plan de tratamiento que resolver· y aliviara tal problema.";
-				nueva_cita->tratamiento = "\nDiagnostico: Es el procedimiento que consiste en aceptar a un paciente, reconocer que tiene un problema y descubrir la causa de este, e idear un plan de tratamiento que resolver· y aliviara tal problema. ";
+				cout << "\n Descripcion: Es el procedimiento que consiste en aceptar a un paciente, reconocer que tiene un problema y descubrir la causa de este, e idear un plan de tratamiento que resolver√° y aliviara tal problema.";
+				nueva_cita->tratamiento = "\nDiagnostico: Es el procedimiento que consiste en aceptar a un paciente, reconocer que tiene un problema y descubrir la causa de este, e idear un plan de tratamiento que resolver√° y aliviara tal problema. ";
 				cout << "\n Precio unitario: " << PDiagnostico;
 				nueva_cita->preciounitario = PDiagnostico;
 				cout << "\n Cuantos tratamientos desea adquirir? ";
@@ -169,8 +169,8 @@ int main() {
 			}
 			case 3:
 			{
-				cout << "\n Descripcion: Los brackets y la ortodoncia se utilizan para corregir la mordedura deficiente u oclusion dental defectuosa cuando los dientes est·n amontonados o torcidos. En algunos casos, los dientes estan derechos, pero la mandibula superior y la inferior no encajan correctamente.";
-				nueva_cita->tratamiento = "\nBrackets: Los brackets y la ortodoncia se utilizan para corregir la mordedura deficiente u oclusion dental defectuosa cuando los dientes est·n amontonados o torcidos. En algunos casos, los dientes estan derechos, pero la mandibula superior y la inferior no encajan correctamente. ";
+				cout << "\n Descripcion: Los brackets y la ortodoncia se utilizan para corregir la mordedura deficiente u oclusion dental defectuosa cuando los dientes est√°n amontonados o torcidos. En algunos casos, los dientes estan derechos, pero la mandibula superior y la inferior no encajan correctamente.";
+				nueva_cita->tratamiento = "\nBrackets: Los brackets y la ortodoncia se utilizan para corregir la mordedura deficiente u oclusion dental defectuosa cuando los dientes est√°n amontonados o torcidos. En algunos casos, los dientes estan derechos, pero la mandibula superior y la inferior no encajan correctamente. ";
 				cout << "\n Precio unitario: " << PBrackets;
 				nueva_cita->preciounitario = PBrackets;
 				cout << "\n Cuantos tratamientos desea adquirir? ";
@@ -199,8 +199,8 @@ int main() {
 			}
 			case 5:
 			{
-				cout << "\n Descripcion: Es un procedimiento que reemplaza las raices de los dientes con pernos metalicos que parecen tornillos y reemplaza el diente faltante, o daÒado, con un diente artificial que tiene el mismo aspecto y que cumple la misma funcion que los dientes reales.";
-				nueva_cita->tratamiento = "\nImplante: Es un procedimiento que reemplaza las raices de los dientes con pernos metalicos que parecen tornillos y reemplaza el diente faltante, o daÒado, con un diente artificial que tiene el mismo aspecto y que cumple la misma funcion que los dientes reales. ";
+				cout << "\n Descripcion: Es un procedimiento que reemplaza las raices de los dientes con pernos metalicos que parecen tornillos y reemplaza el diente faltante, o da√±ado, con un diente artificial que tiene el mismo aspecto y que cumple la misma funcion que los dientes reales.";
+				nueva_cita->tratamiento = "\nImplante: Es un procedimiento que reemplaza las raices de los dientes con pernos metalicos que parecen tornillos y reemplaza el diente faltante, o da√±ado, con un diente artificial que tiene el mismo aspecto y que cumple la misma funcion que los dientes reales. ";
 				cout << "\n Precio unitario: " << PImplante;
 				nueva_cita->preciounitario = PImplante;
 				cout << "\n Cuantos tratamientos desea adquirir? ";
@@ -213,7 +213,7 @@ int main() {
 				break;
 			}
 
-			default: //Por si el usuario elige una opciÛn que no es adecuada
+			default: //Por si el usuario elige una opci√≥n que no es adecuada
 
 				cout << "Elija una opcion correcta" << endl;
 				system("pause");
@@ -234,7 +234,7 @@ int main() {
 			break;
 
 		}
-		case 2: //si el valor de men˙ es 2, se realizar· lo siguiente
+		case 2: //si el valor de men√∫ es 2, se realizar√° lo siguiente
 		{
 			system("cls"); //Limpiar pantalla
 			cout << "--------------" << endl;
@@ -298,8 +298,8 @@ int main() {
 					}
 					case 2:
 					{
-						cout << "\n Descripcion: Es el procedimiento que consiste en aceptar a un paciente, reconocer que tiene un problema y descubrir la causa de este, e idear un plan de tratamiento que resolver· y aliviara tal problema.";
-						cita_auxiliar->tratamiento = "\nDiagnostico: Es el procedimiento que consiste en aceptar a un paciente, reconocer que tiene un problema y descubrir la causa de este, e idear un plan de tratamiento que resolver· y aliviara tal problema. ";
+						cout << "\n Descripcion: Es el procedimiento que consiste en aceptar a un paciente, reconocer que tiene un problema y descubrir la causa de este, e idear un plan de tratamiento que resolver√° y aliviara tal problema.";
+						cita_auxiliar->tratamiento = "\nDiagnostico: Es el procedimiento que consiste en aceptar a un paciente, reconocer que tiene un problema y descubrir la causa de este, e idear un plan de tratamiento que resolver√° y aliviara tal problema. ";
 						cout << "\n Precio unitario: " << PDiagnostico;
 						cita_auxiliar->preciounitario = PDiagnostico;
 						cout << "\n Cuantos tratamientos desea adquirir? ";
@@ -313,8 +313,8 @@ int main() {
 					}
 					case 3:
 					{
-						cout << "\n Descripcion: Los brackets y la ortodoncia se utilizan para corregir la mordedura deficiente u oclusion dental defectuosa cuando los dientes est·n amontonados o torcidos. En algunos casos, los dientes estan derechos, pero la mandibula superior y la inferior no encajan correctamente.";
-						cita_auxiliar->tratamiento = "\nBrackets: Los brackets y la ortodoncia se utilizan para corregir la mordedura deficiente u oclusion dental defectuosa cuando los dientes est·n amontonados o torcidos. En algunos casos, los dientes estan derechos, pero la mandibula superior y la inferior no encajan correctamente. ";
+						cout << "\n Descripcion: Los brackets y la ortodoncia se utilizan para corregir la mordedura deficiente u oclusion dental defectuosa cuando los dientes est√°n amontonados o torcidos. En algunos casos, los dientes estan derechos, pero la mandibula superior y la inferior no encajan correctamente.";
+						cita_auxiliar->tratamiento = "\nBrackets: Los brackets y la ortodoncia se utilizan para corregir la mordedura deficiente u oclusion dental defectuosa cuando los dientes est√°n amontonados o torcidos. En algunos casos, los dientes estan derechos, pero la mandibula superior y la inferior no encajan correctamente. ";
 						cout << "\n Precio unitario: " << PBrackets;
 						cita_auxiliar->preciounitario = PBrackets;
 						cout << "\n Cuantos tratamientos desea adquirir? ";
@@ -343,8 +343,8 @@ int main() {
 					}
 					case 5:
 					{
-						cout << "\n Descripcion: Es un procedimiento que reemplaza las raices de los dientes con pernos metalicos que parecen tornillos y reemplaza el diente faltante, o daÒado, con un diente artificial que tiene el mismo aspecto y que cumple la misma funcion que los dientes reales.";
-						cita_auxiliar->tratamiento = "\nImplante: Es un procedimiento que reemplaza las raices de los dientes con pernos metalicos que parecen tornillos y reemplaza el diente faltante, o daÒado, con un diente artificial que tiene el mismo aspecto y que cumple la misma funcion que los dientes reales. ";
+						cout << "\n Descripcion: Es un procedimiento que reemplaza las raices de los dientes con pernos metalicos que parecen tornillos y reemplaza el diente faltante, o da√±ado, con un diente artificial que tiene el mismo aspecto y que cumple la misma funcion que los dientes reales.";
+						cita_auxiliar->tratamiento = "\nImplante: Es un procedimiento que reemplaza las raices de los dientes con pernos metalicos que parecen tornillos y reemplaza el diente faltante, o da√±ado, con un diente artificial que tiene el mismo aspecto y que cumple la misma funcion que los dientes reales. ";
 						cout << "\n Precio unitario: " << PImplante;
 						cita_auxiliar->preciounitario = PImplante;
 						cout << "\n Cuantos tratamientos desea adquirir? ";
@@ -357,7 +357,7 @@ int main() {
 						break;
 					}
 
-					default: //Por si el usuario elige una opciÛn que no es adecuada
+					default: //Por si el usuario elige una opci√≥n que no es adecuada
 
 						cout << "Elija una opcion correcta" << endl;
 						system("pause");
@@ -386,7 +386,7 @@ int main() {
 			}
 			system("cls");
 			break;
-		case 3: //si el valor de men˙ es 3, se realizar· lo siguiente
+		case 3: //si el valor de men√∫ es 3, se realizar√° lo siguiente
 		{
 			system("cls"); //Limpiar pantalla
 			cout << "--------------" << endl;
@@ -456,7 +456,7 @@ int main() {
 			system("cls");
 			break;
 		}
-		case 4: //si el valor de men˙ es 4, se realizar· lo siguiente
+		case 4: //si el valor de men√∫ es 4, se realizar√° lo siguiente
 		{
 			system("cls");
 
@@ -498,7 +498,7 @@ int main() {
 
 		}
 
-		default: //por si el usuario introduce un valor incorrecto o no v·lido
+		default: //por si el usuario introduce un valor incorrecto o no v√°lido
 
 			cout << "Elija una opcion correcta" << endl;
 			system("pause");
@@ -522,6 +522,7 @@ void registrar_txt() {
 			archivo << cita_auxiliar->nombre << endl;
 			archivo << cita_auxiliar->tratamiento << endl;
 			archivo << cita_auxiliar->Ctratamientos << endl;
+			archivo << cita_auxiliar->preciounitario << endl;
 			archivo << cita_auxiliar->precio << endl;
 			archivo << cita_auxiliar->Hora << endl;
 			cita_auxiliar = cita_auxiliar->siguiente;
@@ -551,10 +552,11 @@ int leer_txt() {
 			getline(archivo, linea);
 			cita_auxiliar->tratamiento = linea;
 			getline(archivo, descripcion_trat);
-
 			cita_auxiliar->tratamiento = cita_auxiliar->tratamiento + "\n" + descripcion_trat;
 			getline(archivo, linea);
 			cita_auxiliar->Ctratamientos = stoi(linea);
+			getline(archivo, linea);
+			cita_auxiliar->preciounitario = stoi(linea);
 			getline(archivo, linea);
 			cita_auxiliar->precio = stoi(linea);
 			getline(archivo, linea);
